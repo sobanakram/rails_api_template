@@ -24,22 +24,7 @@ module App
     # -- all .rb files in that directory are automatically loaded.
     config.load_defaults 6.0
 
-    config.secret_key_base = ENV['SECRET_KEY_BASE']
-
     config.autoload_paths += %W[#{config.root}/lib]
-
-    ActionMailer::Base.smtp_settings = {
-      address: 'smtp.sendgrid.net',
-      port: 25,
-      domain: 'www.api.com',
-      authentication: :plain,
-      user_name: ENV['SENDGRID_USERNAME'],
-      password: ENV['SENDGRID_PASSWORD']
-    }
-    config.action_mailer.default_url_options = { host: ENV['SERVER_URL'] }
-    config.action_mailer.default_options = {
-      from: 'no-reply@api.com'
-    }
 
     config.generators do |g|
       g.test_framework :rspec

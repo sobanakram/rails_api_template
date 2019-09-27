@@ -2,6 +2,13 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
       ## Database authenticatable
+
+      t.string :first_name
+      t.string :last_name
+      t.string :phone_number
+      t.string :device_token
+      t.integer :app_version
+
       t.string :email
       t.string :encrypted_password, null: false, default: ''
 
@@ -17,8 +24,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.integer  :sign_in_count, default: 0, null: false
       t.datetime :current_sign_in_at
       t.datetime :last_sign_in_at
-      t.inet     :current_sign_in_ip
-      t.inet     :last_sign_in_ip
+      t.string   :current_sign_in_ip
+      t.string   :last_sign_in_ip
 
       ## Confirmable
       # t.string   :confirmation_token
@@ -30,10 +37,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       # t.integer  :failed_attempts, default: 0, null: false # Only if lock strategy is :failed_attempts
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
-
-      t.string   :first_name,             default: ''
-      t.string   :last_name,              default: ''
-      t.string   :username,               default: ''
 
       t.timestamps null: false
     end

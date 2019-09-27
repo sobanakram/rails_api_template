@@ -73,6 +73,7 @@ Rails.application.configure do
 
   # Store files on Amazon S3.
   config.active_storage.service = :amazon
+  Rails.application.routes.default_url_options = { host: ENV['SERVER_URL'] }
 
   if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
@@ -85,6 +86,20 @@ Rails.application.configure do
 
   config.assets.precompile += %w[active_admin.js active_admin.css]
 
+
+  ActionMailer::Base.smtp_settings = {
+    address: 'smtp.sendgrid.net',
+    port: 25,
+    domain: 'www.api.com',
+    authentication: :plain,
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD']
+  }
+
+  config.action_mailer.default_url_options = { host: ENV['SERVER_URL'] }
+  config.action_mailer.default_options = {
+    from: 'no-reply@umergencyapp.com'
+  }
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write

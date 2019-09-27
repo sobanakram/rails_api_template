@@ -11,6 +11,7 @@ Finally, it contains a plug an play Administration console (thanks to [ActiveAdm
 ## Features
 
 This template comes with:
+
 - Schema
   - Users table
   - Admin users table
@@ -41,43 +42,43 @@ This template comes with:
 ## Gems
 
 - [ActiveAdmin](https://github.com/activeadmin/activeadmin) for easy administration
+- [ActiveModelSerializer](https://github.com/rails-api/active_model_serializers) for easy administration
 - [Annotate](https://github.com/ctran/annotate_models) for doc the schema in the classes
+- [ApiPie](https://github.com/Apipie/apipie-rails) for Api documentation
 - [Better Errors](https://github.com/charliesome/better_errors) for a better error page
 - [Brakeman](https://github.com/presidentbeef/brakeman) for static analysis security
 - [Bullet](https://github.com/flyerhzm/bullet) help to kill N+1
 - [Byebug](https://github.com/deivid-rodriguez/byebug) for debugging
-- [DelayedJob](https://github.com/collectiveidea/delayed_job) for background processing
+- [Capistrano](https://github.com/capistrano/rails) for deployment
+- [Capistrano::Rails::Console](https://gitlab.com/ydkn/capistrano-rails-console) for rails console from server
 - [Devise](https://github.com/plataformatec/devise) for basic auth
 - [Devise Token Auth](https://github.com/lynndylanhurley/devise_token_auth) for api auth
-- [Draper](https://github.com/drapergem/draper) for decorators
 - [Factory Bot](https://github.com/thoughtbot/factory_bot) for testing data
 - [Faker](https://github.com/stympy/faker) for generating test data
 - [Figaro](https://github.com/laserlemon/figaro) for handling environment variables
-- [Haml](https://github.com/haml/haml) for the template engine
-- [Jbuilder](https://github.com/rails/jbuilder) for json views
 - [Letter Opener](https://github.com/ryanb/letter_opener) for previewing a mail in the browser
 - [Oj](https://github.com/ohler55/oj) for optimized json
-- [Pry](https://github.com/pry/pry) for enhancing the ruby shell
 - [Puma](https://github.com/puma/puma) for the server
-- [Rack CORS](https://github.com/cyu/rack-cors) for handling CORS
 - [Rails Best Practices](https://github.com/flyerhzm/rails_best_practices) for rails linting
 - [Reek](https://github.com/troessner/reek) for ruby linting
 - [RSpec](https://github.com/rspec/rspec) for testing
 - [Rubocop](https://github.com/bbatsov/rubocop/) for ruby linting
-- [Sendgrid](https://github.com/stephenb/sendgrid) for sending mails
 - [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers) adds other testing matchers
 - [Simplecov](https://github.com/colszowka/simplecov) for code coverage
 - [Webmock](https://github.com/bblimke/webmock) for stubbing http requests
 
 ## Optional configuration
 
-- Set your [frontend URL](https://github.com/cyu/rack-cors#origin) in `config/initializers/rack_cors.rb`
 - Set your mail sender in `config/initializers/devise.rb`
 - Config your timezone accordingly in `application.rb`.
 
 ## Api Docs
 
-http://docs.railsapibase.apiary.io
+http://localhost:3000/api_docs
+
+- Username: `developer`
+- Password: `password`
+- You can update credentials in `config/initializers/apipie.rb`
 
 ## Code quality
 
@@ -90,6 +91,7 @@ With `rake code_analysis` you can run the code analysis tool, you can omit rules
 - [Bullet](https://github.com/flyerhzm/bullet#whitelist) You can add exceptions to a bullet initializer or in the controller
 
 ## Configuring Code Climate
+
 1. After adding the project to CC, go to `Repo Settings`
 2. On the `Test Coverage` tab, copy the `Test Reporter ID`
 3. Replace the current value of `CC_TEST_REPORTER_ID` on the `config.yml file (.circleci/config.yml)` with the one you copied from CC
@@ -102,7 +104,4 @@ Code owners are automatically requested for review when someone opens a pull req
 
 ## Credits
 
-Rails Api Base is maintained by [Rootstrap](http://www.rootstrap.com) with the help of our
-[contributors](https://github.com/rootstrap/rails_api_base/contributors).
-
-[<img src="https://s3-us-west-1.amazonaws.com/rootstrap.com/img/rs.png" width="100"/>](http://www.rootstrap.com)
+Rails Api Template is forked from [Rootstrap](https://github.com/rootstrap/rails_api_base) and updated with respect to our requirements by me [Muhammad Soban Akram](https://github.com/sobanakram)

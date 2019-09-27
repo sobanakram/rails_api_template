@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta content="text/html" charset="utf-8" http-equiv="content-type">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+    div,
+    p,
+    a,
+    li,
+    td {
+      -webkit-text-size-adjust: none;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+      background-color: #f3f3f3;
+    }
+
+    .ExternalClass {
+      width: 100%;
+      background-color: #f3f3f3;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      width: 100%;
+    }
+
+    #logo {
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .emailContent {
+      padding: 0 10%;
+    }
+
+    .hover:hover {
+      opacity: 0.90;
+      filter: alpha(opacity=90);
+    }
+
+    .padded {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+
+    .footer {
+      background-color: #e7eeee;
+    }
+  </style>
+</head>
+<body>
+<div class="emailContent">
+  <%= yield %>
+</div>
+</body>
+</html>

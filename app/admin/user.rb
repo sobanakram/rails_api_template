@@ -6,7 +6,6 @@ ActiveAdmin.register User do
       f.input :email
       f.input :first_name
       f.input :last_name
-      f.input :username
 
       if f.object.new_record?
         f.input :password
@@ -23,7 +22,6 @@ ActiveAdmin.register User do
     column :email
     column :first_name
     column :last_name
-    column :username
     column :sign_in_count
     column :created_at
     column :updated_at
@@ -45,7 +43,8 @@ ActiveAdmin.register User do
       row :email
       row :first_name
       row :last_name
-      row :username
+      row :reset_password_token
+      row :reset_password_sent_at
       row :sign_in_count
       row :created_at
       row :updated_at

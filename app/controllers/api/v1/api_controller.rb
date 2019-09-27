@@ -9,12 +9,19 @@ module Api
       layout false
       respond_to :json
 
-      rescue_from Exception,                           with: :render_error
+      rescue_from Exception,                           with: :render_exception_error
       rescue_from ActiveRecord::RecordNotFound,        with: :render_not_found
       rescue_from ActiveRecord::RecordInvalid,         with: :render_record_invalid
       rescue_from ActionController::RoutingError,      with: :render_not_found
       rescue_from AbstractController::ActionNotFound,  with: :render_not_found
       rescue_from ActionController::ParameterMissing,  with: :render_parameter_missing
+
+      resource_description do
+        formats ['json']
+        error code: 401, desc: 'Unauthorized'
+        error 422, 'Unprocessable Entity'
+        description 'Authorization not required, It will return access-token, client, uid in header, which required for authorization'
+      end
 
       def status
         render json: { online: true }
@@ -22,7 +29,7 @@ module Api
 
       private
 
-      def render_error(exception)
+      def render_exception_error(exception)
         raise exception if Rails.env.test?
 
         # To properly handle RecordNotFound errors in views
