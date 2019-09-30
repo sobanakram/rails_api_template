@@ -95,7 +95,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: ENV['SERVER_URL'] }
   config.action_mailer.default_options = {
-    from: 'no-reply@rails-api-template.com'
+    from: ENV['FROM_EMAIL']
   }
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
