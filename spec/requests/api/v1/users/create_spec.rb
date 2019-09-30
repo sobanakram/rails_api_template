@@ -5,7 +5,6 @@ describe 'POST api/v1/users/', type: :request do
   let(:failed_response) { 422 }
 
   describe 'POST create' do
-    let(:username)              { 'test' }
     let(:email)                 { 'test@test.com' }
     let(:password)              { '12345678' }
     let(:password_confirmation) { '12345678' }
@@ -14,14 +13,11 @@ describe 'POST api/v1/users/', type: :request do
 
     let(:params) do
       {
-        user: {
-          username: username,
           email: email,
           password: password,
           password_confirmation: password_confirmation,
           first_name: first_name,
           last_name: last_name
-        }
       }
     end
 
@@ -40,11 +36,8 @@ describe 'POST api/v1/users/', type: :request do
     it 'returns the user' do
       post user_registration_path, params: params, as: :json
 
-      expect(json[:user][:id]).to eq(user.id)
       expect(json[:user][:email]).to eq(user.email)
-      expect(json[:user][:username]).to eq(user.username)
       expect(json[:user][:uid]).to eq(user.uid)
-      expect(json[:user][:provider]).to eq('email')
       expect(json[:user][:first_name]).to eq(user.first_name)
       expect(json[:user][:last_name]).to eq(user.last_name)
     end

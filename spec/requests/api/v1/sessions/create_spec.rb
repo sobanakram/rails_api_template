@@ -5,10 +5,10 @@ describe 'POST api/v1/users/sign_in', type: :request do
   let(:token) do
     {
       '70crCAAYmNP1xLkKKM09zA' =>
-      {
-        'token' => '$2a$10$mSeRnpVMaaegCpn3AhORGe5wajFhgMoBjGIrMwq4Qq2mP6f/OHu1y',
-        'expiry' => 153_574_356_4
-      }
+        {
+          'token' => '$2a$10$mSeRnpVMaaegCpn3AhORGe5wajFhgMoBjGIrMwq4Qq2mP6f/OHu1y',
+          'expiry' => 153_574_356_4
+        }
     }
   end
   let(:user) { create(:user, password: password, tokens: token) }
@@ -16,11 +16,8 @@ describe 'POST api/v1/users/sign_in', type: :request do
   context 'with correct params' do
     before do
       params = {
-        user:
-          {
-            email: user.email,
-            password: password
-          }
+        email: user.email,
+        password: password
       }
       post new_user_session_path, params: params, as: :json
     end
@@ -30,11 +27,8 @@ describe 'POST api/v1/users/sign_in', type: :request do
     end
 
     it 'returns the user' do
-      expect(json[:user][:id]).to eq(user.id)
       expect(json[:user][:email]).to eq(user.email)
-      expect(json[:user][:username]).to eq(user.username)
       expect(json[:user][:uid]).to eq(user.uid)
-      expect(json[:user][:provider]).to eq('email')
       expect(json[:user][:first_name]).to eq(user.first_name)
       expect(json[:user][:last_name]).to eq(user.last_name)
     end

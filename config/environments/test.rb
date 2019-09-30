@@ -43,8 +43,7 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system in a temporary directory.
   config.active_storage.service = :test
-
-  Delayed::Worker.delay_jobs = false
+  Rails.application.routes.default_url_options = { host: 'http://localhost:3000' }
 
   config.after_initialize do
     Bullet.enable = true

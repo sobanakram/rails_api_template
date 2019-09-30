@@ -13,9 +13,12 @@ gem 'bootsnap', '~> 1.3.0'
 gem 'devise', '~> 4.7.1'
 gem 'devise_token_auth', '~> 1.1.2'
 gem 'jbuilder', '~> 2.9.1'
+# Use Mailgun for sending emails
+gem 'mailgun_rails'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 gem 'oj', '~> 3.7', '>= 3.7.12'
+gem 'rack-cors', '~> 0.4.0'
 gem 'webpacker', '~> 4.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -35,7 +38,7 @@ end
 
 group :development do
   gem 'byebug'
-  gem 'annotate', '~> 2.6.5'
+  gem 'annotate'
   gem 'better_errors', '~> 2.1.1'
   gem 'binding_of_caller'
   gem 'brakeman', '~> 4.4.0'

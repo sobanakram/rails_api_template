@@ -87,18 +87,15 @@ Rails.application.configure do
   config.assets.precompile += %w[active_admin.js active_admin.css]
 
 
-  ActionMailer::Base.smtp_settings = {
-    address: 'smtp.sendgrid.net',
-    port: 25,
-    domain: 'www.api.com',
-    authentication: :plain,
-    user_name: ENV['SENDGRID_USERNAME'],
-    password: ENV['SENDGRID_PASSWORD']
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: ENV['MAILGUN_API_KEY'],
+    domain: ENV['MAILGUN_DOMAIN']
   }
 
   config.action_mailer.default_url_options = { host: ENV['SERVER_URL'] }
   config.action_mailer.default_options = {
-    from: 'no-reply@umergencyapp.com'
+    from: 'no-reply@rails-api-template.com'
   }
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector

@@ -7,11 +7,11 @@ module Api
       api :POST, 'users/sign_in.json', 'User login'
       error 422, 'Unprocessable Entity'
       description 'Authorization not required, It will return access-token, client, uid in header, which required for authorization'
-      param :user, Hash, desc: "User info", required: true do
-        param :email, String, required: true
-        param :password, String, required: true
-      end
+      param :email, String, required: true
+      param :password, String, required: true
       returns code: 201, desc: "a successful response" do
+        property :first_name, String
+        property :last_name, String
         property :uid, String
         property :email, String
         property :user_type, String, 'Possible value: Parent, Student'
@@ -33,7 +33,7 @@ module Api
       private
 
       def resource_params
-        params.require(:user).permit(:email, :password)
+        params.permit(:email, :password)
       end
 
       def render_create_success
