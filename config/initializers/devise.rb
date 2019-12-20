@@ -251,6 +251,28 @@ Devise.setup do |config|
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
 
+  # To customize unauthorize error message for api
+  class MSAFailureApp < Devise::FailureApp
+    def respond
+      if request.format == :json
+        json_error_response
+      else
+        super
+      end
+    end
+
+    def json_error_response
+      self.status = 401
+      self.content_type = 'application/json'
+      self.response_body = { error: i18n_message }.to_json
+    end
+  end
+
+  config.warden do |manager|
+    manager.failure_app = MSAFailureApp
+    manager.intercept_401 = true
+  end
+
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
   # is mountable, there are some extra configurations to be taken into account.
