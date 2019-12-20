@@ -19,7 +19,7 @@ gem 'mailgun_rails'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 gem 'oj', '~> 3.7', '>= 3.7.12'
-gem 'rack-cors', '~> 0.4.0'
+gem 'rack-cors', '~> 1.0.5'
 gem 'webpacker', '~> 4.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
