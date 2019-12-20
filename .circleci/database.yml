@@ -1,9 +1,9 @@
 test:
- adapter: postgresql
- encoding: unicode
- pool: 5
- username: postgres
- password: postgres
- host: localhost
- port: 5432
- database: test_db
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: 
+  host: localhost
+  port: 5432
+  database: circle_test
