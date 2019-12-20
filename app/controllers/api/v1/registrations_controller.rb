@@ -38,7 +38,6 @@ module Api
 
       def render_create_error
         render json: {
-          status: 'error',
           error: resource_errors[:full_messages].join(', ')
         }, status: 422
       end

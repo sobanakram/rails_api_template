@@ -1,4 +1,4 @@
-class AddDeviseTokenAuthFieldsUsers < ActiveRecord::Migration[5.0]
+class AddDeviseTokenAuthFieldsUsers < ActiveRecord::Migration[6.0]
   def change
     change_table :users, bulk: true do |t|
       t.string :provider, null: false, default: 'email'
