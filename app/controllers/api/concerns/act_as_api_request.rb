@@ -25,6 +25,17 @@ module Api
         render json: resource, status: status
       end
 
+      def render_resource_error(resource, status = 422)
+        render_error(status, resource.errors.full_messages.join(', '))
+      end
+
+      def render_message(message, status = 200)
+        response = {
+          message: message
+        }
+        render json: response, status: status
+      end
+
       def render_error(status, message, _data = nil)
         response = {
           error: message
@@ -32,8 +43,16 @@ module Api
         render json: response, status: status
       end
 
+      def render_account_blocked
+        render_error(401, I18n.t('devise.sessions.blocked'))
+      end
+
       def request_content_type
         request.content_type
+      end
+
+      def pagy_meta(pagy)
+        pagy_headers(pagy).except("Link")
       end
     end
   end

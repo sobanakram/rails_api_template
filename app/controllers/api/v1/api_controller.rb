@@ -5,6 +5,9 @@ module Api
       include DeviseTokenAuth::Concerns::SetUserByToken
 
       before_action :authenticate_user!, except: :status
+      before_action :user_blocked!
+
+      serialization_scope :view_context
 
       layout false
       respond_to :json
@@ -15,13 +18,8 @@ module Api
       rescue_from ActionController::RoutingError,      with: :render_not_found
       rescue_from AbstractController::ActionNotFound,  with: :render_not_found
       rescue_from ActionController::ParameterMissing,  with: :render_parameter_missing
+      rescue_from ArgumentError,                       with: :render_argument_error
 
-      resource_description do
-        formats ['json']
-        error code: 401, desc: 'Unauthorized'
-        error 422, 'Unprocessable Entity'
-        description 'Authorization not required, It will return access-token, client, uid in header, which required for authorization'
-      end
 
       def status
         render json: { online: true }
@@ -55,6 +53,15 @@ module Api
       def render_parameter_missing(exception)
         logger.info(exception) # for logging
         render json: { error: I18n.t('api.errors.missing_param') }, status: :unprocessable_entity
+      end
+
+      def render_argument_error(exception)
+        logger.info(exception) # for logging
+        render_error(:bad_request, exception.message)
+      end
+
+      def user_blocked!
+        render_account_blocked if current_user&.blocked?
       end
     end
   end

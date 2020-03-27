@@ -23,11 +23,39 @@ module Api
         super
       end
 
-      api :Delete, 'users/sign_out.json', 'User logout'
-      description ''
+      api :Delete, 'users/sign_out.json', 'Reader logout'
 
       def destroy
-        super
+        # remove auth instance variables so that after_action does not run
+        user = remove_instance_variable(:@resource) if @resource
+        client = @token.client if @token.client
+        @token.clear!
+
+        if user
+          user.tokens.clear
+          user.save!
+          render_destroy_success
+        else
+          render_destroy_error
+        end
+      end
+
+      protected
+
+      def render_create_success
+        render json: @resource, serializer: CurrentUserSerializer
+      end
+
+      def render_create_error_bad_credentials
+        render_error(422, I18n.t('devise_token_auth.sessions.bad_credentials'))
+      end
+
+      def render_create_error_account_locked
+        render_account_blocked
+      end
+
+      def render_destroy_error
+        render_error(422, I18n.t('devise_token_auth.sessions.user_not_found'))
       end
 
       private
