@@ -16,8 +16,8 @@ gem 'devise_token_auth', '~> 1.1.2'
 gem 'jbuilder', '~> 2.9.1'
 # Use Mailgun for sending emails
 gem 'mailgun_rails'
-# Use mysql as the database for Active Record
-gem 'mysql2'
+# Use Postgres as the database for Active Record
+gem 'pg'
 gem 'oj', '~> 3.7', '>= 3.7.12'
 gem 'rack-cors', '~> 0.4.0'
 gem 'webpacker', '~> 4.0'
@@ -54,7 +54,6 @@ group :development do
   # For deployment
   gem "capistrano", "~> 3.11", require: false
   gem "capistrano-rails", "~> 1.4", require: false
-  gem 'capistrano-passenger', '~> 0.2.0', require: false
   gem 'capistrano-rails-console', require: false
 end
 
@@ -67,11 +66,6 @@ end
 
 group :assets do
   gem 'uglifier', '~> 2.7.2'
-end
-
-group :production do
-  # Use Passenger for production
-  gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

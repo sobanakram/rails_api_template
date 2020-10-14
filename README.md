@@ -4,7 +4,7 @@
 <!-- [![Code Climate](https://codeclimate.com/github/rootstrap/rails_api_base/badges/gpa.svg)](https://codeclimate.com/github/rootstrap/rails_api_base) -->
 <!-- [![Test Coverage](https://api.codeclimate.com/v1/badges/63de7f82c79f5fe82f46/test_coverage)](https://codeclimate.com/github/rootstrap/rails_api_base/test_coverage) -->
 
-Rails Api Template is a boilerplate project for JSON RESTful APIs. It follows the community best practices in terms of standards, security and maintainability, integrating a variety of testing and code quality tools. It's based on Rails 6 and Ruby 2.6.
+Rails Api Template is a boilerplate project for JSON RESTful APIs. It follows the community best practices in terms of standards, security and maintainability, integrating a variety of testing and code quality tools. It's based on Rails 6 and Ruby 2.7.2.
 
 Finally, it contains a plug an play Administration console (thanks to [ActiveAdmin](https://github.com/activeadmin/activeadmin)).
 
@@ -30,6 +30,7 @@ This template comes with:
 
 1. Clone this repo
 2. Install PostgreSQL in case you don't have it
+3.   Run bootstrap.sh with the name of your your project like `./bootstrap.sh my_awesome_project`
 3. Create your `database.yml` and `application.yml` file
 4. `bundle install`
 5. Generate a secret key with `rake secret` and paste this value into the `application.yml`.
