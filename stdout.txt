@@ -1,109 +1,126 @@
 Fetching gem metadata from https://rubygems.org/.......
 Fetching gem metadata from https://rubygems.org/.
-Resolving dependencies............
+Resolving dependencies.............
 Using rake 13.0.1
-Using concurrent-ruby 1.1.6
+Fetching concurrent-ruby 1.1.7 (was 1.1.6)
+Installing concurrent-ruby 1.1.7 (was 1.1.6)
 Using i18n 0.9.5
-Using minitest 5.14.1
+Fetching minitest 5.14.2 (was 5.14.1)
+Installing minitest 5.14.2 (was 5.14.1)
 Using thread_safe 0.3.6
 Using tzinfo 1.2.7
-Using zeitwerk 2.3.0
-Using activesupport 6.0.3.1 (was 6.0.2.2)
+Fetching zeitwerk 2.4.0 (was 2.3.0)
+Installing zeitwerk 2.4.0 (was 2.3.0)
+Fetching activesupport 6.0.3.4 (was 6.0.3.1)
+Installing activesupport 6.0.3.4 (was 6.0.3.1)
 Using builder 3.2.4
 Using erubi 1.9.0
 Using mini_portile2 2.4.0
-Using nokogiri 1.10.9
+Fetching nokogiri 1.10.10 (was 1.10.9)
+Installing nokogiri 1.10.10 (was 1.10.9) with native extensions
 Using rails-dom-testing 2.0.3
 Using crass 1.0.6
-Using loofah 2.5.0
+Fetching loofah 2.7.0 (was 2.5.0)
+Installing loofah 2.7.0 (was 2.5.0)
 Using rails-html-sanitizer 1.3.0
-Using actionview 6.0.3.1 (was 6.0.2.2)
-Using rack 2.2.2
+Fetching actionview 6.0.3.4 (was 6.0.3.1)
+Installing actionview 6.0.3.4 (was 6.0.3.1)
+Using rack 2.2.3
 Using rack-test 1.1.0
-Using actionpack 6.0.3.1 (was 6.0.2.2)
-Using nio4r 2.5.2
+Fetching actionpack 6.0.3.4 (was 6.0.3.1)
+Installing actionpack 6.0.3.4 (was 6.0.3.1)
+Using nio4r 2.5.4
 Using websocket-extensions 0.1.5
-Using websocket-driver 0.7.2 (was 0.7.1)
-Using actioncable 6.0.3.1 (was 6.0.2.2)
+Fetching websocket-driver 0.7.3 (was 0.7.2)
+Installing websocket-driver 0.7.3 (was 0.7.2) with native extensions
+Fetching actioncable 6.0.3.4 (was 6.0.3.1)
+Installing actioncable 6.0.3.4 (was 6.0.3.1)
 Using globalid 0.4.2
-Using activejob 6.0.3.1 (was 6.0.2.2)
-Using activemodel 6.0.3.1 (was 6.0.2.2)
-Using activerecord 6.0.3.1 (was 6.0.2.2)
-Using mimemagic 0.3.5 (was 0.3.4)
+Fetching activejob 6.0.3.4 (was 6.0.3.1)
+Installing activejob 6.0.3.4 (was 6.0.3.1)
+Fetching activemodel 6.0.3.4 (was 6.0.3.1)
+Installing activemodel 6.0.3.4 (was 6.0.3.1)
+Fetching activerecord 6.0.3.4 (was 6.0.3.1)
+Installing activerecord 6.0.3.4 (was 6.0.3.1)
+Using mimemagic 0.3.5
 Using marcel 0.3.3
-Using activestorage 6.0.3.1 (was 6.0.2.2)
+Fetching activestorage 6.0.3.4 (was 6.0.3.1)
+Installing activestorage 6.0.3.4 (was 6.0.3.1)
 Using mini_mime 1.0.2
 Using mail 2.7.1
-Using actionmailbox 6.0.3.1 (was 6.0.2.2)
-Using actionmailer 6.0.3.1 (was 6.0.2.2)
-Using actiontext 6.0.3.1 (was 6.0.2.2)
+Fetching actionmailbox 6.0.3.4 (was 6.0.3.1)
+Installing actionmailbox 6.0.3.4 (was 6.0.3.1)
+Fetching actionmailer 6.0.3.4 (was 6.0.3.1)
+Installing actionmailer 6.0.3.4 (was 6.0.3.1)
+Fetching actiontext 6.0.3.4 (was 6.0.3.1)
+Installing actiontext 6.0.3.4 (was 6.0.3.1)
 Using case_transform 0.2
 Using jsonapi-renderer 0.2.2
 Using active_model_serializers 0.10.10
 Using bundler 2.1.4
 Using method_source 1.0.0
 Using thor 1.0.1
-Using railties 6.0.3.1 (was 6.0.2.2)
-Using sprockets 3.7.2 (was 4.0.0)
-Using sprockets-rails 3.2.1
-Using rails 6.0.3.1 (was 6.0.2.2)
+Fetching railties 6.0.3.4 (was 6.0.3.1)
+Installing railties 6.0.3.4 (was 6.0.3.1)
+Using sprockets 3.7.2
+Fetching sprockets-rails 3.2.2 (was 3.2.1)
+Installing sprockets-rails 3.2.2 (was 3.2.1)
+Fetching rails 6.0.3.4 (was 6.0.3.1)
+Installing rails 6.0.3.4 (was 6.0.3.1)
 Using active_storage_base64 1.0.0
-Using arbre 1.2.1
+Fetching ruby2_keywords 0.0.2
+Installing ruby2_keywords 0.0.2
+Fetching arbre 1.3.0 (was 1.2.1)
+Installing arbre 1.3.0 (was 1.2.1)
 Using formtastic 3.1.5
 Using formtastic_i18n 0.6.0
 Using has_scope 0.7.2
-Fetching responders 3.0.1 (was 3.0.0)
-Installing responders 3.0.1 (was 3.0.0)
+Using responders 3.0.1
 Using inherited_resources 1.11.0
-Fetching jquery-rails 4.4.0 (was 4.3.5)
-Installing jquery-rails 4.4.0 (was 4.3.5)
-Fetching kaminari-core 1.2.1
-Installing kaminari-core 1.2.1
-Fetching kaminari-actionview 1.2.1
-Installing kaminari-actionview 1.2.1
-Fetching kaminari-activerecord 1.2.1
-Installing kaminari-activerecord 1.2.1
-Fetching kaminari 1.2.1
-Installing kaminari 1.2.1
+Using jquery-rails 4.4.0
+Using kaminari-core 1.2.1
+Using kaminari-actionview 1.2.1
+Using kaminari-activerecord 1.2.1
+Using kaminari 1.2.1
 Using polyamorous 2.3.2
 Using ransack 2.3.2
-Using ffi 1.13.0 (was 1.12.2)
-Using sassc 2.4.0 (was 2.2.1)
+Fetching ffi 1.13.1 (was 1.13.0)
+Installing ffi 1.13.1 (was 1.13.0) with native extensions
+Using sassc 2.4.0
 Using tilt 2.0.10
 Using sassc-rails 2.1.2
-Fetching activeadmin 2.7.0 (was 2.6.1)
-Installing activeadmin 2.7.0 (was 2.6.1)
-Using public_suffix 4.0.5 (was 4.0.3)
+Fetching activeadmin 2.8.1 (was 2.7.0)
+Installing activeadmin 2.8.1 (was 2.7.0)
+Fetching public_suffix 4.0.6 (was 4.0.5)
+Installing public_suffix 4.0.6 (was 4.0.5)
 Using addressable 2.7.0
-Fetching net-ssh 6.0.2 (was 5.2.0)
-Installing net-ssh 6.0.2 (was 5.2.0)
-Fetching net-scp 3.0.0 (was 2.0.0)
-Installing net-scp 3.0.0 (was 2.0.0)
+Fetching net-ssh 6.1.0 (was 6.0.2)
+Installing net-ssh 6.1.0 (was 6.0.2)
+Using net-scp 3.0.0
 Using sshkit 1.21.0
 Using airbrussh 1.4.0
 Using annotate 3.1.1
-Fetching apipie-rails 0.5.18 (was 0.5.17)
-Installing apipie-rails 0.5.18 (was 0.5.17)
-Using ast 2.4.0
-Fetching aws-eventstream 1.1.0 (was 1.0.3)
-Installing aws-eventstream 1.1.0 (was 1.0.3)
-Fetching aws-partitions 1.326.0 (was 1.289.0)
-Installing aws-partitions 1.326.0 (was 1.289.0)
-Fetching aws-sigv4 1.1.4 (was 1.1.1)
-Installing aws-sigv4 1.1.4 (was 1.1.1)
+Using apipie-rails 0.5.18
+Fetching ast 2.4.1 (was 2.4.0)
+Installing ast 2.4.1 (was 2.4.0)
+Using aws-eventstream 1.1.0
+Fetching aws-partitions 1.381.0 (was 1.326.0)
+Installing aws-partitions 1.381.0 (was 1.326.0)
+Fetching aws-sigv4 1.2.2 (was 1.1.4)
+Installing aws-sigv4 1.2.2 (was 1.1.4)
 Using jmespath 1.4.0
-Fetching aws-sdk-core 3.98.0 (was 3.92.0)
-Installing aws-sdk-core 3.98.0 (was 3.92.0)
-Fetching aws-sdk-kms 1.33.0 (was 1.30.0)
-Installing aws-sdk-kms 1.33.0 (was 1.30.0)
-Fetching aws-sdk-s3 1.67.1 (was 1.61.1)
-Installing aws-sdk-s3 1.67.1 (was 1.61.1)
+Fetching aws-sdk-core 3.109.1 (was 3.98.0)
+Installing aws-sdk-core 3.109.1 (was 3.98.0)
+Fetching aws-sdk-kms 1.39.0 (was 1.33.0)
+Installing aws-sdk-kms 1.39.0 (was 1.33.0)
+Fetching aws-sdk-s3 1.83.0 (was 1.67.1)
+Installing aws-sdk-s3 1.83.0 (was 1.67.1)
 Using descendants_tracker 0.0.4
 Using ice_nine 0.11.2
 Using axiom-types 0.1.1
-Using bcrypt 3.1.13
-Fetching coderay 1.1.3 (was 1.1.2)
-Installing coderay 1.1.3 (was 1.1.2)
+Fetching bcrypt 3.1.16 (was 3.1.13)
+Installing bcrypt 3.1.16 (was 3.1.13) with native extensions
+Using coderay 1.1.3
 Using erubis 2.7.0
 Using better_errors 2.1.1
 Using debug_inspector 0.0.3
@@ -113,35 +130,37 @@ Using bootsnap 1.3.2
 Using brakeman 4.4.0
 Using uniform_notifier 1.13.0
 Using bullet 6.0.2
-Using byebug 11.1.3 (was 11.1.1)
-Fetching capistrano 3.14.0 (was 3.12.1)
-Installing capistrano 3.14.0 (was 3.12.1)
-Using capistrano-bundler 1.6.0
-Using capistrano-passenger 0.2.0
-Fetching capistrano-rails 1.5.0 (was 1.4.0)
-Installing capistrano-rails 1.5.0 (was 1.4.0)
+Using byebug 11.1.3
+Fetching capistrano 3.14.1 (was 3.14.0)
+Installing capistrano 3.14.1 (was 3.14.0)
+Fetching capistrano-bundler 2.0.1 (was 1.6.0)
+Installing capistrano-bundler 2.0.1 (was 1.6.0)
+Fetching capistrano-rails 1.6.1 (was 1.5.0)
+Installing capistrano-rails 1.6.1 (was 1.5.0)
 Using sshkit-interactive 0.3.0
 Using capistrano-rails-console 2.3.0
-Using sexp_processor 4.14.1
-Using code_analyzer 0.5.1
+Fetching sexp_processor 4.15.1 (was 4.14.1)
+Installing sexp_processor 4.15.1 (was 4.14.1)
+Fetching code_analyzer 0.5.2 (was 0.5.1)
+Installing code_analyzer 0.5.2 (was 0.5.1)
 Using coercible 1.0.0
 Using equalizer 0.0.11
 Using virtus 1.0.5
 Using codeclimate-engine-rb 0.4.1
-Using safe_yaml 1.0.5
-Using crack 0.4.3
+Fetching crack 0.4.4 (was 0.4.3)
+Installing crack 0.4.4 (was 0.4.3)
 Using orm_adapter 0.5.0
-Using warden 1.2.8
-Using devise 4.7.1
-Fetching devise_token_auth 1.1.4 (was 1.1.3)
-Installing devise_token_auth 1.1.4 (was 1.1.3)
-Using diff-lcs 1.3
+Fetching warden 1.2.9 (was 1.2.8)
+Installing warden 1.2.9 (was 1.2.8)
+Fetching devise 4.7.3 (was 4.7.1)
+Installing devise 4.7.3 (was 4.7.1)
+Using devise_token_auth 1.1.4
+Fetching diff-lcs 1.4.4 (was 1.3)
+Installing diff-lcs 1.4.4 (was 1.3)
 Using docile 1.1.5
-Using unf_ext 0.0.7.7 (was 0.0.7.6)
+Using unf_ext 0.0.7.7
 Using unf 0.1.4
 Using domain_name 0.5.20190701
-Fetching etc 1.1.0
-Installing etc 1.1.0 with native extensions
 Using execjs 2.7.0
 Using factory_bot 4.8.2
 Using factory_bot_rails 4.8.2
@@ -151,32 +170,31 @@ Using http-accept 1.7.0
 Using http-cookie 1.0.3
 Using mini_magick 4.10.1
 Using ruby-vips 2.0.17
-Fetching image_processing 1.11.0 (was 1.10.3)
-Installing image_processing 1.11.0 (was 1.10.3)
+Fetching image_processing 1.12.0 (was 1.11.0)
+Installing image_processing 1.12.0 (was 1.11.0)
 Using jaro_winkler 1.5.4
 Using jbuilder 2.9.1
-Using json 2.3.0
+Fetching json 2.3.1 (was 2.3.0)
+Installing json 2.3.1 (was 2.3.0) with native extensions
 Using kwalify 0.7.2
 Using launchy 2.5.0
 Using letter_opener 1.4.1
-Using rb-fsevent 0.10.4 (was 0.10.3)
+Using rb-fsevent 0.10.4
 Using rb-inotify 0.10.1
 Using listen 3.0.8
-Fetching mime-types-data 3.2020.0512 (was 3.2019.1009)
-Installing mime-types-data 3.2020.0512 (was 3.2019.1009)
+Using mime-types-data 3.2020.0512
 Using mime-types 3.3.1
 Using netrc 0.11.0
 Using rest-client 2.1.0
 Using mailgun_rails 0.9.0
-Using mysql2 0.5.3
-Fetching oj 3.10.6 (was 3.10.5)
-Installing oj 3.10.6 (was 3.10.5) with native extensions
-Using parallel 1.19.1
+Fetching oj 3.10.14 (was 3.10.6)
+Installing oj 3.10.14 (was 3.10.6) with native extensions
+Fetching parallel 1.19.2 (was 1.19.1)
+Installing parallel 1.19.2 (was 1.19.1)
 Using parser 2.6.5.0
-Fetching passenger 6.0.5 (was 6.0.4)
-Installing passenger 6.0.5 (was 6.0.4) with native extensions
+Using pg 1.2.3
 Using psych 3.1.0
-Using puma 4.3.5
+Using puma 5.0.2
 Using rack-cors 0.4.1
 Using rack-proxy 0.6.5
 Using require_all 3.0.0
@@ -191,14 +209,15 @@ Using rspec-mocks 3.8.2
 Using rspec-rails 3.8.3
 Using unicode-display_width 1.6.1
 Using rubocop 0.78.0
-Fetching rubocop-rails 2.5.2 (was 2.5.0)
-Installing rubocop-rails 2.5.2 (was 2.5.0)
+Using rubocop-rails 2.5.2
 Using shoulda-matchers 3.1.3
 Using simplecov-html 0.10.2
 Using simplecov 0.13.0
-Using spring 2.1.0
+Fetching spring 2.1.1 (was 2.1.0)
+Installing spring 2.1.1 (was 2.1.0)
 Using spring-watcher-listen 2.0.1
 Using uglifier 2.7.2
 Using webmock 2.3.2
-Using webpacker 4.2.2
+Fetching webpacker 4.3.0 (was 4.2.2)
+Installing webpacker 4.3.0 (was 4.2.2)
 Bundle updated!
